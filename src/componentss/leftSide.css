@@ -1,0 +1,156 @@
+.leftSidepart{
+  position: fixed;
+}
+
+.logo{
+  width: 100px;
+  height: 25px;
+  /* border: 1px solid black; */
+  margin-left:39px ;
+  border-bottom: 1px solid;
+  margin-bottom: 10px;
+  
+}
+.logoImg{
+  padding-top: 10px;
+  height: 35px;
+  width: 100%;
+}
+.navLinkPart{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+.navName{
+  font-weight:700;
+  padding: 5px;
+}
+.navlink{
+  display: flex;
+  height: 35px;
+  margin-top: 20px;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+  &:hover{
+      background-color:gray;
+      border-radius: 10px;
+      cursor: pointer;
+  }
+}.searchBarOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.searchBar {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+.searchBar input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchBar button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.userResult {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.userPhoto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 14px;
+}
+/* leftSide.css */
+
+.leftSidepart {
+  position: relative;
+}
+
+.notifications {
+  width: 00px;
+  margin: 20px auto;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+
+.notification img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.notificationDetails {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.notificationDetails.open {
+  left: 0;
+}
+
+.notificationDetails button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notificationDetails button:hover {
+  background-color: #0056b3;
+}

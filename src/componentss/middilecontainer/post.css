@@ -1,0 +1,151 @@
+/* General Post Section */
+.postSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    
+  }
+  
+  .post {
+    width: 90%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #999999;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* Post Header */
+  .postInfo {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .profileImage {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .postTime {
+    font-size: 12px;
+    color: gray;
+  }
+  
+  /* Post Image */
+  .postImgContainer {
+    width: 100%;
+  }
+  
+  .postImg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Icons Section */
+  .postActions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    align-items: center;
+  }
+  
+  .leftIcons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .rightIcon {
+    margin-left: auto;
+  }
+  
+  /* Like Section */
+  .likeSection {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .likedBy {
+    display: flex;
+    align-items: center;
+  }
+  
+  .likeImg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: -8px;
+    border: 2px solid white;
+  }
+  
+  .likeCount {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  /* Post Caption */
+  .postCaption {
+    padding: 5px 15px;
+    font-size: 14px;
+  }
+  
+  .captionUsername {
+    font-weight: bold;
+  }
+  
+  .captionText {
+    margin-left: 5px;
+  }
+  
+  /* Comments Section */
+  .commentSection {
+    padding: 5px 15px 15px;
+    font-size: 13px;
+    color: gray;
+  }
+  
+  .viewComments {
+    cursor: pointer;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .post {
+      width: 95%;
+    }
+  
+    .profileImage {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .likeImg {
+      width: 22px;
+      height: 22px;
+    }
+  
+    .likeCount, .captionUsername, .captionText {
+      font-size: 12px;
+    }
+  }
+  

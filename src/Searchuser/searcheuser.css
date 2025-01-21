@@ -1,0 +1,255 @@
+.profile-container {
+  animation: gradientBackground 10s ease infinite, floatingEffect 6s ease-in-out infinite;
+  background-color: #504e4e;
+}
+
+@keyframes floatingEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Float upwards */
+  }
+  100% {
+    transform: translateY(0); /* Return to original position */
+  }
+}
+.profile-container {
+  background: linear-gradient(to right, #d9d3d2, #feb47b);
+  background-size: 200% 200%; /* Set the gradient size for smooth transition */
+  font-family: 'Arial', sans-serif;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  animation: gradientAnimation 5s ease infinite; /* Apply the animation */
+}
+
+/* Define the keyframes for the gradient animation */
+
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Initial gradient position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle of the animation */
+  }
+  100% {
+    background-position: 0% 50%; /* End at the initial gradient position */
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile-pic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+button {
+  background-color: #FF7E5F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #feb47b;
+}
+
+.profile-stats div {
+  font-size: 16px;
+}
+.profile-bio{
+  animation: gradientAnimation 5s ease infinite; /* Apply the animation */
+  background-size: 100% 200%;
+border-radius: 20px;
+  background: linear-gradient(to right, #b48a84, #d8d0c9);
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%; /* Initial gradient position */
+  }
+  50% {
+    background-position: 100% 50%; /* Middle of the animation */
+  }
+  100% {
+    background-position: 0% 50%; /* End at the initial gradient position */
+  }
+}
+
+
+.profile-bio p {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+/* Story Highlights */
+.story-highlights {
+  margin-top: 30px;
+  background-color: rgba(101, 125, 125, 0.244);
+  border-radius: 10px ;
+}
+
+.story-highlights h4 {
+  font-size: 20px;
+  color: #917a74;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+li:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+/* Posts section */
+.posts-section {
+  margin-top: 30px;
+}
+
+.posts-section h4 {
+  font-size: 20px;
+  color: #FF7E5F;
+  font-weight: bold;
+}
+
+.posts {
+  display: flex;
+  gap: 10px;
+}
+
+.posts img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.posts img:hover {
+  transform: scale(1.05);
+}
+
+/* Notification */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  z-index: 1000;
+  animation: slideUp 3s ease-in-out;
+}/* Followers overlay */
+.followers-list-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.followers-list-container {
+  background-color: #fff;
+  color: black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 75%;  /* Adjust the width of the container */
+  height: 60%; /* Adjust the height of the container */
+  max-height: 80%;
+  border: 2px solid #ddd; /* Add a border around the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow for a subtle effect */
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  gap: 10px; /* Add some space between each follower */
+}
+
+.followers-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.followers-list-header button {
+  background-color: #FF7E5F;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.followers-list-header button:hover {
+  background-color: #feb47b;
+}
+
+.followers-list {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical display */
+  overflow-y: auto; /* Enable vertical scrolling */
+  gap: 10px; /* Add some space between each follower */
+}
+
+.followers-list li {
+  display: flex;
+  flex-direction: row; /* Keep the photo and name horizontally aligned */
+  align-items: center;
+}
+
+.follower-photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px; /* Space between the photo and name */
+}
+
+button[disabled] {
+  background-color: #dcdcdc;
+  cursor: not-allowed;
+}
+
+button[disabled]:hover {
+  background-color: #dcdcdc;
+}

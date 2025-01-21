@@ -1,0 +1,21 @@
+.body{
+    background-image: url("../../images/bgfull.jpg");
+    margin-top: 0;
+}
+
+.container{
+    width: 70vw;
+    height: 80vh;
+    background-color: rgb(155, 155, 95);
+    /* backdrop-filter: blur(19px) saturate(180%); */
+    border-radius: 12px;
+    display: flex;
+    border: 1px solid rgb(192, 129, 129);
+
+}
+.Loading{
+    padding:50px;
+    font-size: 36px;
+    border-radius: 10px;
+    background-color: rgb(63, 88, 88);
+}

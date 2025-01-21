@@ -1,0 +1,68 @@
+.main-wrapper {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.filter-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  grid-auto-rows: auto; /* Make sure each grid row takes up only the required space */
+}
+
+.video-item {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.uploaded-video {
+  width: 100%;
+  height: auto;
+  max-height: 300px; /* Set a max-height to prevent videos from being too tall */
+  cursor: pointer;
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+.fullscreen-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fullscreen-video video {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+.close-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

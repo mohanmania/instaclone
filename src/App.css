@@ -1,0 +1,31 @@
+.App {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid;
+  display: flex;
+  margin-top: 70px;
+}
+
+.leftSideHome {
+  flex: 0.17;
+  /* border: 1px solid red; */
+}
+
+.middileSide {
+  flex: 0.5;
+  /* border: 1px solid rgba(112, 101, 101, 0.374); */
+}
+
+.rightSide {
+  margin-top: 70px;
+  flex: 0.3;
+  /* border: 1px solid rgb(47, 255, 0); */
+}
+
+/* Media query to hide .rightSide on screens smaller than 600px */
+@media (max-width: 600px) {
+  .rightSide {
+    display: none;
+  }
+}
